@@ -1,0 +1,111 @@
+:root {
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-bold: 700;
+
+    --very-dark-grey: hsl(0, 0%, 17%);
+    --dark-grey: hsl(0, 0%, 59%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Rubik", sans-serif;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 50rem;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(./images/pattern-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 40vh;
+}
+
+.hero__heading {
+    padding: 2rem 0;
+    color: white;
+    font-weight: var(--font-medium);
+    font-size: 1.6rem;
+}
+
+.hero__input-label {
+    display: none;
+}
+
+.hero__input {
+    width: 70%;
+    height: 3.5rem;
+    border-radius: 1rem 0 0 1rem;
+    border: none;
+    padding: 0 2rem;
+    font-size: 1.2rem;
+}
+
+.hero__input-btn {
+    height: 3.5rem;
+    width: 3.5rem;
+    border: none;
+    position: relative;
+    border-radius: 0 1rem 1rem 0;
+    background: black;
+    border: 1px solid rgba(206, 206, 206, 0.486);
+    cursor: pointer;
+}
+
+main {
+    height: 60vh;
+    width: 100%;
+}
+
+.output {
+    position: absolute;
+    top: 12rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(70% + 3.5rem);
+    margin: 0 auto;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    text-align: center;
+    padding: .5rem 0;
+    z-index: 10;
+}
+
+.output__info {
+    padding: .8rem 0;
+}
+.output__info-heading {
+    font-size: .7rem;
+    letter-spacing: 0.1rem;
+    color: var(--dark-grey);
+    text-transform: uppercase;
+}
+.output__info-content {
+    font-size: 1.5rem;
+    padding-top: .5rem;
+}
+#mapid {
+    height: 100%;
+    z-index: 9;
+}
