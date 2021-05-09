@@ -90,10 +90,12 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
     border-radius: 1rem;
     text-align: center;
     padding: .5rem 0;
     z-index: 10;
+    height: 40vh;
 }
 
 .output__info {
@@ -107,7 +109,7 @@ main {
     text-transform: uppercase;
 }
 .output__info-content {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     padding-top: .5rem;
 }
 #mapid {
@@ -146,7 +148,7 @@ main {
     }
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 375px) {
     html {
         font-size: 75%;
     }
