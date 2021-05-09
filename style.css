@@ -12,6 +12,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    font-size: 100%;
+}
 body {
     display: flex;
     flex-direction: column;
@@ -56,7 +59,8 @@ form {
     border-radius: 1rem 0 0 1rem;
     border: none;
     padding: 0 2rem;
-    font-size: 1.2rem;
+    font-weight: var(--font-bold);
+    font-size: 1rem;
 }
 
 .hero__input-btn {
@@ -65,7 +69,7 @@ form {
     border: none;
     position: relative;
     border-radius: 0 1rem 1rem 0;
-    background: black;
+    background: rgb(56, 56, 56);
     border: 1px solid rgba(206, 206, 206, 0.486);
     cursor: pointer;
 }
@@ -95,6 +99,7 @@ main {
 .output__info {
     padding: .8rem 0;
 }
+
 .output__info-heading {
     font-size: .7rem;
     letter-spacing: 0.1rem;
@@ -108,4 +113,41 @@ main {
 #mapid {
     height: 100%;
     z-index: 9;
+}
+
+@media only screen and (min-width: 1300px){
+    .output {
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 13rem;
+    } 
+    .output__info-content {
+        max-width: 12ch;
+        height: 3rem;
+    }
+    .output__info {
+        padding: 0rem 5rem;
+    }
+    .hero {
+        height: 30vh;
+    }
+    main {
+        height: 70vh;
+    }
+    .output__info:nth-child(1) {
+        border-right: 1px solid lightgray;
+ 
+    }
+    .output__info:nth-child(2) {
+        border-right: 1px solid lightgray;
+    }
+    .output__info:nth-child(3) {
+        border-right: 1px solid lightgray;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    html {
+        font-size: 75%;
+    }
 }
