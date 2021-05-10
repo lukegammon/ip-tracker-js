@@ -38,7 +38,7 @@ async function getData(ipAddress) {
       // If using corsBypass
       //ipAddress ? `${corsBypass}${ipapiURL}/${ipAddress}?fields=${fields}` :
       //`${corsBypass}${ipapiURL}/?fields=${fields}`);
-      ipAddress ? `${ipapiURL}/${ipAddress}?fields=${fields}` :
+      ipAddress ? `${ipapiURL}${ipAddress}?fields=${fields}` :
       `${ipapiURL}/?fields=${fields}`);
     const data = await response.json();
     if(data.status === "success") {
