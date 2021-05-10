@@ -1,4 +1,4 @@
-//const corsBypass = "https://cors-anywhere.herokuapp.com/"
+const corsBypass = "https://cors-anywhere.herokuapp.com/"
 const ipapiURL = "http://ip-api.com/json/";
 const fields = "message,region,city,zip,lat,lon,isp,query,offset,status";
 
