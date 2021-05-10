@@ -1,5 +1,5 @@
 //const corsBypass = "https://cors-anywhere.herokuapp.com/"
-const ipapiURL = "http://ip-api.com/json/";
+const ipapiURL = "https://ip-api.com/json/";
 const fields = "message,region,city,zip,lat,lon,isp,query,offset,status";
 
 // Store the location of the current marker(pin)
