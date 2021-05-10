@@ -1,4 +1,4 @@
-const corsBypass = "https://cors-anywhere.herokuapp.com/"
+//const corsBypass = "https://cors-anywhere.herokuapp.com/"
 const ipapiURL = "http://ip-api.com/json/";
 const fields = "message,region,city,zip,lat,lon,isp,query,offset,status";
 
@@ -35,8 +35,11 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 
 async function getData(ipAddress) {
     const response = await fetch(
-      ipAddress ? `${corsBypass}${ipapiURL}/${ipAddress}?fields=${fields}` :
-      `${corsBypass}${ipapiURL}/?fields=${fields}`);
+      // If using corsBypass
+      //ipAddress ? `${corsBypass}${ipapiURL}/${ipAddress}?fields=${fields}` :
+      //`${corsBypass}${ipapiURL}/?fields=${fields}`);
+      ipAddress ? `${ipapiURL}/${ipAddress}?fields=${fields}` :
+      `${ipapiURL}/?fields=${fields}`);
     const data = await response.json();
     if(data.status === "success") {
       setData(data);
