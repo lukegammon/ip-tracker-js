@@ -29,7 +29,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     id: 'mapbox/streets-v11',
     tileSize: 512,
     zoomOffset: -1,
-    accessToken: 'pk.eyJ1IjoibHVrZWdhbW1vbiIsImEiOiJja29jeXlrM3MzZWt4MndscDJ3c2t6bWN5In0.foff0b_WTBNyxmUTYfHrIw',
+    accessToken: 'pk.eyJ1IjoibHVrZWdhbW1vbiIsImEiOiJja29qMnEycTgwMmpyMnZsOHE3dGxwZDgzIn0.9f-Zx-AqdH5ZkMxRghDyDg',
     zoomControl: false
 }).addTo(mymap);
 
