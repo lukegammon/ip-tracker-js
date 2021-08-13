@@ -34,8 +34,8 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 
 async function getData(ipAddress) {
     const response = await fetch(
-      ipAddress ? `${ipapiURL}/${ipAddress}?fields=${fields}` :
-      `${ipapiURL}/?fields=${fields}`);
+      ipAddress ? `${ipapiURL}${ipAddress}?fields=${fields}` :
+      `${ipapiURL}?fields=${fields}`);
     const data = await response.json();
     if(data.status === "success") {
       setData(data);
